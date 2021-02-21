@@ -10,7 +10,11 @@ class StartScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
+          WebsafeSvg.asset("assets/icons/bg.svg",
+              width: double.infinity,
+              height: double.infinity,
+              fit:BoxFit.cover
+          ),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),

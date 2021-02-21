@@ -19,7 +19,10 @@ class _Splach_ScreenState extends State<Splach_Screen> {
     return Scaffold(
       body: Stack(
         children: [
-          WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
+          WebsafeSvg.asset("assets/icons/bg.svg",
+              width: double.infinity,
+              height: double.infinity,
+              fit:BoxFit.cover),
           SafeArea(
             child:Center(
               child: Text('Quizstar',style: TextStyle(

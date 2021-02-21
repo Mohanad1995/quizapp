@@ -123,7 +123,9 @@ class _QuizPageState extends State<QuizPage> {
       child: Scaffold(
         body:  Stack(
           children: [
-            WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.fill),
+            WebsafeSvg.asset("assets/icons/bg.svg",  width: double.infinity,
+                height: double.infinity,
+                fit:BoxFit.cover),
             SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,

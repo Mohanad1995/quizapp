@@ -39,7 +39,9 @@ class _Result_PageState extends State<Result_Page> {
     return Scaffold(
       body: Stack(
         children: [
-          WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.cover),
+          WebsafeSvg.asset("assets/icons/bg.svg",  width: double.infinity,
+              height: double.infinity,
+              fit:BoxFit.cover),
           Column(
             children: <Widget>[
               Container(
@@ -59,7 +61,7 @@ class _Result_PageState extends State<Result_Page> {
                     ),
                     Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 16.0,
+                          vertical: 20.0,
                           horizontal: 15.0,
                         ),
                         child: Center(
